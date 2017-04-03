@@ -1,6 +1,24 @@
-FROM python:3
-RUN pip install "devpi-server>=2.5,<2.6dev" "devpi-client>=2.3,<=2.4dev"
+FROM python:3.5-alpine
+
+ENV DEVPI_SERVERDIR=/mnt \
+    DEVPI_CLIENTDIR=/tmp/devpi-client \
+    DEVPI_MIRROR_CACHE_EXPIRY=86400 \
+    BUILD_DEPS='\
+        g++ \
+        gcc \
+        libffi-dev \
+        py-pip \
+        python3-dev'
+
+COPY ["requirements.txt", "logger_cfg.json", "run.sh", "/"]
+
+RUN apk add --no-cache python3 $BUILD_DEPS && \
+    pip3 install -r /requirements.txt && \
+    apk del $BUILD_DEPS && \
+    rm /requirements.txt
+
 VOLUME /mnt
 EXPOSE 3141
-ADD run.sh /
-CMD ["/run.sh"]
+USER 997
+
+CMD "/run.sh"
