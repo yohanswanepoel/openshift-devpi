@@ -1,3 +1,4 @@
-devpi-client==2.7.0
-devpi-common==3.0.1
-devpi-server==4.2.1
+devpi-client==3.0.0
+devpi-common==3.1.0
+devpi-server==4.3.0
+devpi-web==3.2.0
