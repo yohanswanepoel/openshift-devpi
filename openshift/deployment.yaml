@@ -58,7 +58,7 @@ spec:
             failureThreshold: 3
           readinessProbe:
             httpGet:
-              path: /
+              path: /+status
               port: 3141
               scheme: HTTP
             initialDelaySeconds: 10
