@@ -1,5 +1,11 @@
 # CHANGELOG
 
+0.3 (unreleased)
+----------------
+
+- Pin version in openshift deploymentconfig.
+
+
 0.2 (2017-06-11)
 ----------------
 
@@ -8,6 +14,7 @@
 - bundle `devpi-web`
 - upgrade versions to `devpi-client==3.0.0, devpi-common==3.1.0 , devpi-server==4.3.0, devpi-web==3.2.0`
 - drop `root` user creation.
+
 
 0.1 (2017-04-03)
 ----------------

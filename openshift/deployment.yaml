@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
         - name: devpi
-          image: widerin/openshift-devpi
+          image: widerin/openshift-devpi:v0.2
           ports:
             - containerPort: 3141
               protocol: TCP
