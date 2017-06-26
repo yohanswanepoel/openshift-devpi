@@ -3,6 +3,7 @@
 0.3 (unreleased)
 ----------------
 
+- Put clientdir also into `/mnt` mountpoint.
 - Pin version in openshift deploymentconfig.
 
 

@@ -1,7 +1,7 @@
 FROM python:3.6
 
-ENV DEVPI_SERVERDIR=/mnt \
-    DEVPI_CLIENTDIR=/tmp/devpi-client \
+ENV DEVPI_SERVERDIR=/mnt/server \
+    DEVPI_CLIENTDIR=/mnt/client \
     DEVPI_MIRROR_CACHE_EXPIRY=86400
 
 COPY ["requirements.txt", "logger_cfg.json", "run.sh", "/"]
