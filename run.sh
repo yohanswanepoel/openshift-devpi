@@ -5,7 +5,7 @@ if [ ! -f "${DEVPI_SERVERDIR}/.serverversion" ]; then
   devpi-server --init
 fi
 
-if [ -z "${DEVPI_PASSWORD}" ]; then
+if [ -n "${DEVPI_PASSWORD}" ]; then
   devpi-server --restrict-modify root --start --host 127.0.0.1 --port 3142
   devpi-server --status
   devpi use http://127.0.0.1:3142
