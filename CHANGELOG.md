@@ -1,8 +1,9 @@
 # CHANGELOG
 
-0.3 (unreleased)
+0.3 (2017-06-26)
 ----------------
 
+- Set root password if `DEVPI_PASSWORD` is set.
 - Put clientdir also into `/mnt` mountpoint.
 - Pin version in openshift deploymentconfig.
 
