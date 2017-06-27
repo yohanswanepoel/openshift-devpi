@@ -1,9 +1,10 @@
 # CHANGELOG
 
-0.4 (unreleased)
+0.4 (2017-06-27)
 ----------------
 
-- nothing changed yet.
+- Fix startup issue if `DEVPI_SERVERDIR` already created and entrypoint tries
+  to set password again, which failed.
 
 
 0.3 (2017-06-26)
