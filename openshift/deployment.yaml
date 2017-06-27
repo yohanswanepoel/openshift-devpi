@@ -11,7 +11,7 @@ spec:
     rollingParams:
       updatePeriodSeconds: 1
       intervalSeconds: 1
-      timeoutSeconds: 120
+      timeoutSeconds: 300
       maxUnavailable: 25%
       maxSurge: 25%
     resources:
@@ -40,10 +40,10 @@ spec:
               value: ''
           resources:
             limits:
-              cpu: 100m
+              cpu: 500m
               memory: 300M
             requests:
-              cpu: 100m
+              cpu: 500m
               memory: 300M
           volumeMounts:
             - name: devpi-data
