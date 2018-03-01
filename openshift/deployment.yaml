@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
         - name: devpi
-          image: widerin/openshift-devpi:v0.3
+          image: yohanswanepoel007/pypiproxy:latest
           ports:
             - containerPort: 3141
               protocol: TCP
