@@ -3,7 +3,6 @@ kind: Route
 metadata:
   name: devpi
 spec:
-  host: www.example.com
-  to:
+   to:
     kind: Service
     name: devpi
